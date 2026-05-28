@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>புதுமனை புகுவிழா அழைப்பிதழ் | Housewarming Invitation</title>
     
+    <!-- Robust Font Integration for Cloud Servers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary: #800020; 
-            --secondary: #d4af37; 
-            --accent: #ff4500; 
+            --primary: #800020; /* Deep Royal Burgundy */
+            --secondary: #d4af37; /* Premium Gold Accent */
+            --accent: #ff4500; /* Vibrant Festive Vermilion */
             --bg-gradient: linear-gradient(135deg, #fdfbf7 0%, #f5eedc 100%);
             --card-bg: #ffffff;
             --text-dark: #2c2c2c;
@@ -28,6 +29,7 @@
         }
 
         body {
+            /* Fallback font stack preserves script spacing if CDNs encounter server-side delays */
             font-family: 'Mukta Malar', 'Latha', 'Tamil Sangam MN', 'Poppins', sans-serif;
             background: var(--bg-gradient);
             color: var(--text-dark);
@@ -41,6 +43,7 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
+        /* Ambient floating background elements */
         .bg-decorations {
             position: fixed;
             width: 100vw;
@@ -63,6 +66,7 @@
             50% { transform: translateY(-20px) rotate(180deg); }
         }
 
+        /* Core Card Component */
         .invitation-container {
             position: relative;
             background: var(--card-bg);
@@ -84,6 +88,7 @@
             to { transform: translateY(0); opacity: 1; }
         }
 
+        /* Top Hanging Traditional Mango Leaf Border Effect */
         .toran {
             position: absolute;
             top: 0;
@@ -94,25 +99,11 @@
             border-bottom: 3px solid var(--secondary);
         }
 
-        .ganesha-image-container {
-            margin: 25px auto 10px auto;
-            width: 120px;
-            height: 120px;
-            display: block;
-            filter: drop-shadow(0px 4px 10px rgba(128, 0, 32, 0.2));
-        }
-
-        .ganesha-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
         .divine-header {
             font-size: 14px;
             color: var(--primary);
             font-weight: 600;
-            margin-top: 4px;
+            margin-top: 8px;
             margin-bottom: 4px;
             letter-spacing: 0.5px;
         }
@@ -121,7 +112,7 @@
             font-size: 30px;
             color: var(--primary);
             font-weight: 800;
-            margin: 18px 0 16px 0;
+            margin: 24px 0 16px 0;
             position: relative;
             display: inline-block;
             line-height: 1.3;
@@ -143,6 +134,7 @@
             margin-bottom: 20px;
         }
 
+        /* Auspicious Timings Card Container */
         .details-box {
             background: #fffcf5;
             border: 1px dashed var(--secondary);
@@ -159,6 +151,7 @@
             text-justify: inter-word;
         }
 
+        /* House Identity Hero Block */
         .house-showcase {
             margin: 28px 0;
             padding: 24px 20px;
@@ -195,6 +188,7 @@
             line-height: 1.7;
         }
 
+        /* Cross-Browser Stable Grids */
         .people-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -203,6 +197,7 @@
             text-align: left;
         }
 
+        /* Fluid breakpoints to secure hosting layouts from broken text wrappers */
         @media (max-width: 540px) {
             .people-section {
                 grid-template-columns: 1fr;
@@ -290,6 +285,7 @@
 </head>
 <body>
 
+    <!-- Ornamental Background Decorations -->
     <div class="bg-decorations">
         <div class="flower" style="width: 40px; height: 40px; top: 12%; left: 6%; animation-delay: 0s;"></div>
         <div class="flower" style="width: 50px; height: 50px; top: 78%; left: 88%; animation-delay: 1.5s;"></div>
@@ -299,10 +295,6 @@
     <div class="invitation-container">
         <div class="toran"></div>
         <div id="confetti-wrapper"></div>
-
-        <div class="ganesha-image-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Vector_Ganesha.png" alt="Lord Vinayagar Picture">
-        </div>
 
         <div class="divine-header">ஸ்ரீ விநாயகர் துணை</div>
         <div class="divine-header" style="margin-bottom: 12px;">ஸ்ரீ பாலா திரிபுர சுந்தரி துணை</div>
@@ -331,6 +323,7 @@
             புதுமனை புகுவிழா நடைபெற இருப்பதால் தாங்கள் தங்கள் சுற்றமும் நட்பும் சூழ வருகை தந்து விழாவினை சிறப்பித்து எங்களை ஆசீர்வதிக்க அன்புடன் அழைக்கிறோம்.
         </p>
 
+        <!-- Welcoming Relatives Card Section -->
         <div class="people-section">
             <div class="section-title">உடன் வரவேற்போர்கள்</div>
             <div class="person-card">
@@ -345,6 +338,7 @@
             </div>
         </div>
 
+        <!-- Primary Hosts Card Section -->
         <div class="people-section">
             <div class="section-title">தங்களை அன்புடன் வரவேற்கும்</div>
             <div class="person-card" style="grid-column: 1 / -1; text-align: center; border-left: none; border-top: 3px solid var(--secondary);">
@@ -355,6 +349,7 @@
             </div>
         </div>
 
+        <!-- Family Hosts Section -->
         <div class="people-section">
             <div class="section-title">அழைத்து மகிழும்</div>
             <div class="person-card" style="grid-column: 1 / -1; text-align: center; background: #fffcf5; border: none;">
@@ -372,6 +367,7 @@
         <button class="interactive-btn" onclick="celebrate()">மகிழ்ச்சியை கொண்டாடுங்கள் 🎉</button>
     </div>
 
+    <!-- Production Ready Canvas Confetti Simulation Engine -->
     <script>
         function celebrate() {
             const wrapper = document.getElementById('confetti-wrapper');
