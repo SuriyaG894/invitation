@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devi Ganesh Illam - House Warming Invitation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap');
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ffe6e6, #fff0cc);
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #b30000;
+    animation: fadeIn 2s ease-in-out 0.5s forwards;
+    opacity: 0;
+  }
+  h2 {
+    font-size: 1.8em;
+    color: #ff6600;
+    margin: 0.5em 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+    opacity: 0;
+  }
+  p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0.3em 0;
+    animation: fadeIn 2s ease-in-out 1.5s forwards;
+    opacity: 0;
+  }
+  .highlight {
+    color: #b35900;
+    font-weight: bold;
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  .sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: gold;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: float 5s infinite ease-in-out;
+  }
+  @keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-50px) rotate(180deg); }
+    100% { transform: translateY(0) rotate(360deg); }
+  }
+  .section {
+    margin: 10px 0;
+  }
+  .page {
+    page-break-after: always;
+  }
+</style>
+</head>
+<body>
+<div class="container page">
+  <h1>Devi Ganesh Illam</h1>
+  <h2>House Warming Ceremony</h2>
+
+  <p class="section"><span class="highlight">Date:</span> 07-06-2026</p>
+  <p class="section"><span class="highlight">Time:</span> 7:00 AM - 8:15 AM</p>
+  <p class="section"><span class="highlight">Venue:</span> Plot 630 - Vedhachalam Nagar, Adhanur, Guduvanchery, Chennai - 603202</p>
+
+  <p class="section">We cordially invite you to celebrate this auspicious occasion with us.</p>
+</div>
+
+
+<script>
+  for(let i=0; i<50; i++){
+    const sparkle = document.createElement('div');
+    sparkle.classList.add('sparkle');
+    sparkle.style.top = Math.random()*100 + '%';
+    sparkle.style.left = Math.random()*100 + '%';
+    sparkle.style.animationDuration = (2+Math.random()*3) + 's';
+    document.body.appendChild(sparkle);
+  }
+</script>
+</body>
+</html>
