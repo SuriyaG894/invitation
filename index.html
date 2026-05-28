@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>புதுமனை புகுவிழா அழைப்பிதழ் | Housewarming Invitation</title>
     
-    <!-- Robust Font Integration for Cloud Servers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -29,7 +28,6 @@
         }
 
         body {
-            /* Fallback font stack preserves script spacing if CDNs encounter server-side delays */
             font-family: 'Mukta Malar', 'Latha', 'Tamil Sangam MN', 'Poppins', sans-serif;
             background: var(--bg-gradient);
             color: var(--text-dark);
@@ -99,11 +97,19 @@
             border-bottom: 3px solid var(--secondary);
         }
 
+        /* Ganesha SVG Icon Graphic styling */
+        .ganesha-icon-container {
+            margin: 15px auto 5px auto;
+            width: 70px;
+            height: 75px;
+            display: block;
+        }
+
         .divine-header {
             font-size: 14px;
             color: var(--primary);
             font-weight: 600;
-            margin-top: 8px;
+            margin-top: 4px;
             margin-bottom: 4px;
             letter-spacing: 0.5px;
         }
@@ -112,7 +118,7 @@
             font-size: 30px;
             color: var(--primary);
             font-weight: 800;
-            margin: 24px 0 16px 0;
+            margin: 18px 0 16px 0;
             position: relative;
             display: inline-block;
             line-height: 1.3;
@@ -285,7 +291,6 @@
 </head>
 <body>
 
-    <!-- Ornamental Background Decorations -->
     <div class="bg-decorations">
         <div class="flower" style="width: 40px; height: 40px; top: 12%; left: 6%; animation-delay: 0s;"></div>
         <div class="flower" style="width: 50px; height: 50px; top: 78%; left: 88%; animation-delay: 1.5s;"></div>
@@ -295,6 +300,17 @@
     <div class="invitation-container">
         <div class="toran"></div>
         <div id="confetti-wrapper"></div>
+
+        <div class="ganesha-icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+                <path d="M50,15 C45,15 42,22 42,28 C42,34 46,36 44,45 C43,49 39,47 36,44 C32,40 28,42 28,47 C28,55 35,58 41,56 C42,59 40,65 43,68 C46,71 53,72 55,67 C57,63 53,58 55,54 C58,58 66,57 69,52 C72,47 69,42 64,44 C61,46 58,49 57,45 C55,36 59,33 59,28 C59,22 55,15 50,15 Z" fill="none" stroke="#d4af37" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M47,20 L53,20 M46,24 L54,24 M48,28 L52,28" stroke="#ff4500" stroke-width="2"/>
+                <circle cx="50" cy="24" r="1.5" fill="#800020"/>
+                <path d="M44,48 C46,55 45,63 48,70 C50,75 53,82 48,85 C45,87 38,82 38,78" fill="none" stroke="#d4af37" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M48,76 C52,78 57,75 58,70 C59,65 55,62 51,62" fill="none" stroke="#d4af37" stroke-width="2" stroke-dasharray="2,2"/>
+                <circle cx="36" cy="74" r="3" fill="#ff4500"/>
+            </svg>
+        </div>
 
         <div class="divine-header">ஸ்ரீ விநாயகர் துணை</div>
         <div class="divine-header" style="margin-bottom: 12px;">ஸ்ரீ பாலா திரிபுர சுந்தரி துணை</div>
@@ -323,7 +339,6 @@
             புதுமனை புகுவிழா நடைபெற இருப்பதால் தாங்கள் தங்கள் சுற்றமும் நட்பும் சூழ வருகை தந்து விழாவினை சிறப்பித்து எங்களை ஆசீர்வதிக்க அன்புடன் அழைக்கிறோம்.
         </p>
 
-        <!-- Welcoming Relatives Card Section -->
         <div class="people-section">
             <div class="section-title">உடன் வரவேற்போர்கள்</div>
             <div class="person-card">
@@ -338,7 +353,6 @@
             </div>
         </div>
 
-        <!-- Primary Hosts Card Section -->
         <div class="people-section">
             <div class="section-title">தங்களை அன்புடன் வரவேற்கும்</div>
             <div class="person-card" style="grid-column: 1 / -1; text-align: center; border-left: none; border-top: 3px solid var(--secondary);">
@@ -349,7 +363,6 @@
             </div>
         </div>
 
-        <!-- Family Hosts Section -->
         <div class="people-section">
             <div class="section-title">அழைத்து மகிழும்</div>
             <div class="person-card" style="grid-column: 1 / -1; text-align: center; background: #fffcf5; border: none;">
@@ -367,7 +380,6 @@
         <button class="interactive-btn" onclick="celebrate()">மகிழ்ச்சியை கொண்டாடுங்கள் 🎉</button>
     </div>
 
-    <!-- Production Ready Canvas Confetti Simulation Engine -->
     <script>
         function celebrate() {
             const wrapper = document.getElementById('confetti-wrapper');
