@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ta">
 <head>
@@ -12,9 +13,9 @@
     
     <style>
         :root {
-            --primary: #800020; /* Deep Royal Burgundy */
-            --secondary: #d4af37; /* Premium Gold Accent */
-            --accent: #ff4500; /* Vibrant Festive Vermilion */
+            --primary: #800020; 
+            --secondary: #d4af37; 
+            --accent: #ff4500; 
             --bg-gradient: linear-gradient(135deg, #fdfbf7 0%, #f5eedc 100%);
             --card-bg: #ffffff;
             --text-dark: #2c2c2c;
@@ -41,7 +42,6 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Ambient floating background elements */
         .bg-decorations {
             position: fixed;
             width: 100vw;
@@ -64,7 +64,6 @@
             50% { transform: translateY(-20px) rotate(180deg); }
         }
 
-        /* Core Card Component */
         .invitation-container {
             position: relative;
             background: var(--card-bg);
@@ -86,7 +85,6 @@
             to { transform: translateY(0); opacity: 1; }
         }
 
-        /* Top Hanging Traditional Mango Leaf Border Effect */
         .toran {
             position: absolute;
             top: 0;
@@ -97,12 +95,18 @@
             border-bottom: 3px solid var(--secondary);
         }
 
-        /* Ganesha SVG Icon Graphic styling */
-        .ganesha-icon-container {
-            margin: 15px auto 5px auto;
-            width: 70px;
-            height: 75px;
+        .ganesha-image-container {
+            margin: 20px auto 10px auto;
+            width: 110px;
+            height: 110px;
             display: block;
+            filter: drop-shadow(0px 4px 8px rgba(128, 0, 32, 0.15));
+        }
+
+        .ganesha-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .divine-header {
@@ -140,7 +144,6 @@
             margin-bottom: 20px;
         }
 
-        /* Auspicious Timings Card Container */
         .details-box {
             background: #fffcf5;
             border: 1px dashed var(--secondary);
@@ -157,7 +160,6 @@
             text-justify: inter-word;
         }
 
-        /* House Identity Hero Block */
         .house-showcase {
             margin: 28px 0;
             padding: 24px 20px;
@@ -194,7 +196,6 @@
             line-height: 1.7;
         }
 
-        /* Cross-Browser Stable Grids */
         .people-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -203,7 +204,6 @@
             text-align: left;
         }
 
-        /* Fluid breakpoints to secure hosting layouts from broken text wrappers */
         @media (max-width: 540px) {
             .people-section {
                 grid-template-columns: 1fr;
@@ -301,15 +301,8 @@
         <div class="toran"></div>
         <div id="confetti-wrapper"></div>
 
-        <div class="ganesha-icon-container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
-                <path d="M50,15 C45,15 42,22 42,28 C42,34 46,36 44,45 C43,49 39,47 36,44 C32,40 28,42 28,47 C28,55 35,58 41,56 C42,59 40,65 43,68 C46,71 53,72 55,67 C57,63 53,58 55,54 C58,58 66,57 69,52 C72,47 69,42 64,44 C61,46 58,49 57,45 C55,36 59,33 59,28 C59,22 55,15 50,15 Z" fill="none" stroke="#d4af37" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M47,20 L53,20 M46,24 L54,24 M48,28 L52,28" stroke="#ff4500" stroke-width="2"/>
-                <circle cx="50" cy="24" r="1.5" fill="#800020"/>
-                <path d="M44,48 C46,55 45,63 48,70 C50,75 53,82 48,85 C45,87 38,82 38,78" fill="none" stroke="#d4af37" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M48,76 C52,78 57,75 58,70 C59,65 55,62 51,62" fill="none" stroke="#d4af37" stroke-width="2" stroke-dasharray="2,2"/>
-                <circle cx="36" cy="74" r="3" fill="#ff4500"/>
-            </svg>
+        <div class="ganesha-image-container">
+            <img src="https://i.imgur.com/vHqB10l.png" alt="Lord Ganesha">
         </div>
 
         <div class="divine-header">ஸ்ரீ விநாயகர் துணை</div>
@@ -321,7 +314,7 @@
 
         <div class="details-box">
             <p>
-                நிகழும் மங்களகரமான <strong>பராபவ வருடம் வைகாசி மாதம் 24 -ஆம் தேதி (07-06-2026) ஞாயிற்றுக்கிழமை</strong>, சப்தமி திதி, சதயம் நட்சத்திரம், சித்தயோகம் கூடிய சுபயோக சுபதினத்தில் காலை <strong>7.00 மணிக்குமேல் 8.15 மணிக்குள்</strong> மிதுன லக்னத்தில் பால் பொங்கும் விழா சிறப்புற நடைபெற உள்ளது.
+                நிகழும் மங்களகரமான <strong>பராபவ வருடம் வைகாசி மாதம் 24 -ஆம் தேதி (07-06-2026) ஞாயிற்றுக்கிழமை</strong>, சابتமி திதி, சதயம் நட்சத்திரம், சித்தயோகம் கூடிய சுபயோக சுபதினத்தில் காலை <strong>7.00 மணிக்குமேல் 8.15 மணிக்குள்</strong> மிதுன லக்னத்தில் பால் பொங்கும் விழா சிறப்புற நடைபெற உள்ளது.
             </p>
         </div>
 
@@ -422,3 +415,4 @@
     </script>
 </body>
 </html>
+
